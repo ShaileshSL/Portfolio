@@ -65,8 +65,15 @@ const HeroSection = () => {
               applications.
             </p>
             <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
-              <a href="#contact" className="glow-button inline-flex items-center gap-2 rounded-lg">
-               <Mail size={18} /> Contact Me
+              <a
+                href="#contact"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="glow-button inline-flex items-center gap-2 rounded-lg"
+              >
+                <Mail size={18} /> Contact Me
               </a>
 
               <a
