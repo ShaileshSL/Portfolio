@@ -21,7 +21,7 @@ const experiences = [
     period: "Internship",
     points: [
       "Built NLP preprocessing pipelines for text data",
-      "Developed ML models for sentiment classification",
+      "Developed ML models for sentiment Analysis",
       "Created data visualization dashboards",
       "Performed feedback analysis and reporting",
     ],
