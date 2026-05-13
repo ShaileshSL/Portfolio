@@ -65,6 +65,7 @@ const HeroSection = () => {
               applications.
             </p>
             <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
+              <a></a>
               <a
                 href="#contact"
                 onClick={(e) => {
