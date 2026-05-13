@@ -65,15 +65,20 @@ const HeroSection = () => {
               applications.
             </p>
             <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
-              <button
-  onClick={() =>
-    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
-  }
+              <a
+  href="#contact"
+  tabIndex={-1}   // prevents browser from auto‑focusing this link
+  onClick={(e) => {
+    const el = document.getElementById("contact");
+    if (el) {
+      e.preventDefault();
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  }}
   className="glow-button inline-flex items-center gap-2 rounded-lg"
 >
   <Mail size={18} /> Contact Me
-</button>
-
+</a>
               <a
                 href="/resume.pdf"
                 target="_blank"
