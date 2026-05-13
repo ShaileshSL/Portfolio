@@ -66,15 +66,12 @@ const HeroSection = () => {
             </p>
             <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
               <a
-                href="#contact"
-                onClick={(e) => {
-                  e.preventDefault();
-                  document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
-                }}
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border hover:border-primary/50 text-foreground transition-all duration-300 hover:shadow-[0_0_15px_hsl(199_89%_48%/0.15)]"
-              >
-                <Mail size={18} /> Contact Me
-              </a>
+  href="#contact"
+  className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border hover:border-primary/50 text-foreground transition-all duration-300 hover:shadow-[0_0_15px_hsl(199_89%_48%/0.15)]"
+>
+  <Mail size={18} /> Contact Me
+</a>
+
               <a
                 href="/resume.pdf"
                 target="_blank"
